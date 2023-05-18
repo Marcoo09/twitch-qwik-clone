@@ -4,7 +4,7 @@ import { SideBarListItem } from "./sidebar-list-item";
 
 interface ItemProps {}
 
-export const DarkAndStatus = component$<ItemProps>(() => {
+export const SidebarList = component$<ItemProps>(() => {
   const users: any[] = [];
   useStylesScoped$(styles);
 

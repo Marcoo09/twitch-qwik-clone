@@ -1,4 +1,5 @@
-import { component$ } from "@builder.io/qwik";
+import styles from "./sidebar-list-item.css?inline";
+import { component$, useStylesScoped$ } from "@builder.io/qwik";
 
 interface ItemProps {
   user: any;
@@ -6,6 +7,8 @@ interface ItemProps {
 }
 
 export const SideBarListItem = component$<ItemProps>(({ imageId, user }) => {
+  useStylesScoped$(styles);
+
   return (
     <li>
       <div class="item">
